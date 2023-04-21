@@ -1,0 +1,21 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    - name: configure
+      run: sudo apt install -y libasio-dev && mkdir build && cd build && cmake ..
+    - name: make and run
+      run: cd build && make && ./bin/llm-api -h
