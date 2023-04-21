@@ -47,7 +47,7 @@ wget https://gpt4all.io/models/ggml-gpt4all-j.bin -O ./bin/ggml-gpt4all-j.bin
 ## Options
 
 ```
-llm-api -h
+./bin/llm-api -h
 
 usage: ./bin/llm-api [options]                                                                                          
                                                                                                                         
@@ -74,5 +74,5 @@ options:
 - [ ] Add Docker support
 - [ ] Integrate a chat UI.
 - [ ] Add embedding endpoint.
-- Integrate StableLM model.
-- Provide a chain mechanism.
+- [ ] Integrate StableLM model.
+- [ ] Provide a chain mechanism.
