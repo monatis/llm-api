@@ -16,7 +16,7 @@ jobs:
       with:
         submodules: recursive
     - name: configure
-      run: apt install -y libasio-dev && mkdir build && cd build && cmake ..
+      run: sudo apt install -y libasio-dev && mkdir build && cd build && cmake ..
     - name: make
       run: make
     - name: make check
