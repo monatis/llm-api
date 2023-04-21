@@ -1,0 +1,7 @@
+[submodule "ggml"]
+	path = ggml
+	url = https://github.com/ggerganov/ggml.git
+
+[submodule "Crow"]
+	path = Crow
+	url = https://github.com/CrowCpp/Crow.git
