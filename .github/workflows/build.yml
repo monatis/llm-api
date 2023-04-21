@@ -16,10 +16,6 @@ jobs:
       with:
         submodules: recursive
     - name: configure
-      run: sudo apt install -y libasio-dev && mkdir build && cd build && cmake .. && ls && make
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      run: sudo apt install -y libasio-dev && mkdir build && cd build && cmake ..
+    - name: make and run
+      run: cd build && make && ./bin/llm-api -h
