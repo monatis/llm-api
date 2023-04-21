@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 
 #
-# gpt-j-api
+# llm-api
 
 
-project(gpt4allapi VERSION 0.1.0 LANGUAGES CXX)
+project(llmapi VERSION 0.1.0 LANGUAGES CXX)
 
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -129,7 +129,7 @@ endif()
 add_subdirectory(ggml)
 add_subdirectory(Crow)
 
-set(API_TARGET gpt-j-api)
+set(API_TARGET llm-api)
 add_executable(${API_TARGET}
 main.cpp
 utils.h utils.cpp
@@ -138,6 +138,3 @@ gptj.h gptj.cpp
 )
 
 target_link_libraries(${API_TARGET} PRIVATE ggml Crow::Crow)
-
-#set(COMPONENT_NAME_MAIN ${PROJECT_NAME})
-#install(TARGETS ${TEST_TARGET} DESTINATION bin COMPONENT ${COMPONENT_NAME_MAIN})
