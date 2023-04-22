@@ -71,8 +71,13 @@ options:
 ## Roadmap
 
 - [ ] Improve multi-user experience
-- [ ] Add Docker support
-- [ ] Integrate a chat UI.
-- [ ] Add embedding endpoint.
 - [ ] Integrate StableLM model.
+- [ ] Add embedding endpoint.
 - [ ] Provide a chain mechanism.
+- [ ] Integrate a chat UI.
+- [ ] Add Docker support.
+- [ ] Extend readme and docs
+
+## Credits
+- [ggerganov](https://github.com/ggerganov/ggml) for his awesome work in ggml.
+- [Nomic AI](https://github.com/nomic-ai/) for their continuus contribution in truely open-source LLMs.
